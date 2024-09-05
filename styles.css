@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px; /* Ancho reducido de la barra lateral */
+    background-color: #2e003e; /* Negro lila */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 220px; /* Ajustado para tener suficiente espacio para la barra lateral */
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+footer {
+    background-color: #2e003e; /* Negro lila */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2e003e; /* Negro lila */
+    text-align: center; /* Centra el texto del título */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2e003e; /* Negro lila */
+    text-align: center; /* Centra el texto de los subtítulos */
+}
+
+.btn-primary {
+    background-color: #6a0dad; /* Lila */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #4b00a1; /* Lila oscuro */
+}
+
+form {
+    max-width: 600px;
+    width: 100%; /* Asegura que el formulario ocupe el ancho disponible */
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #6a0dad; /* Lila */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4b00a1; /* Lila oscuro */
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra horizontalmente las publicaciones del blog */
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #2e003e; /* Negro lila */
+}
+
+.blog-post p {
+    font-size: 1rem;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #6a0dad; /* Lila */
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-post a:hover {
+    background-color: #4b00a1; /* Lila oscuro */
+}
